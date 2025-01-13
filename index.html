@@ -4,12 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis Beats</title>
+  <style>
+    body {
+      background-color: black; /* Fondo negro */
+      color: white; /* Texto blanco */
+      font-family: Arial, sans-serif; /* Fuente básica */
+      text-align: center; /* Centrar contenido */
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    iframe {
+      border: none; /* Sin bordes para el reproductor */
+      margin-top: 20px;
+    }
+    a {
+      color: #ff5500; /* Enlaces en naranja de SoundCloud */
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-<body style="text-align: center; font-family: Arial, sans-serif;">
+<body>
   <h1>Mis Beats</h1>
-  <!-- Incrustar lista de reproducción de SoundCloud -->
-  <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
-  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1939198671&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-  <p>Consultas: <a href="mailto:info@jefedelam.com">info@jefedelam.com</a></p>
+  <!-- Incrustar lista de reproducción de SoundCloud con tamaño reducido -->
+  <iframe 
+    width="300" 
+    height="100" 
+    scrolling="no" 
+    allow="autoplay" 
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/TU_ID_DE_LISTA&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+  </iframe>
+  <p>Contacto: <a href="mailto:contacto@tudominio.com">contacto@tudominio.com</a></p>
 </body>
 </html>
